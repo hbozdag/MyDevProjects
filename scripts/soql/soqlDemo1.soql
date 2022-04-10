@@ -1,0 +1,39 @@
+//for wildcard use LIKE FOR SEARCH
+//A% -->STARTS WTIH A
+//%A -->ends with A
+//%A% -->CONTAINS A
+// select id, name from account where name LIKE 'A%'
+
+
+SELECT ID, Name from Account
+
+SELECT id, name, project_name__c from salesforce_project__c
+
+SELECT id, name, MailingCity FROM Contact WHERE MailingCity='Paris'
+
+SELECT id, name, MailingCity from contact WHERE name LIKE 'A%'
+
+SELECT ID, Name from Account ORDER BY name 
+
+SELECT Name, Industry from Account where Industry='Energy' LIMIT 2
+
+SELECT COUNT() FROM Contact
+
+SELECT COUNT(ID) FROM Contact
+
+SELECT COUNT(MailingCity) FROM Contact
+
+select id, name, phone from Account where phone !=null and accountnumber !=null
+
+select id, name, status__c from salesforce_project__c where status__c!='New'
+
+SELECT ID, Name, Phone FROM Account WHERE phone !=null and accountnumber !=null
+
+SELECT ID, Name, Phone FROM Account WHERE (Phone!=null OR website !=null) and accountnumber !=null
+
+select id, subject__c, status__c, priority__c from salesforce_ticket__c
+where status__c !='' and priority__c='High'
+
+Select Id From Account WHERE CreatedDate = LAST_N_DAYS:15
+
+

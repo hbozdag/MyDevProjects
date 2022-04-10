@@ -1,0 +1,14 @@
+SELECT Leadsource, COUNT(name) from lead group by LeadSource
+
+select name, count(id) from account group by name HAVING count(id)>1
+
+select SUM(Amount) from opportunity where isClosed=false
+
+SELECT SUM(amount), stagename from opportunity where isClosed=false group by stagename HAVING sum(amount) >20000
+
+FIND {salesforce} 
+IN name fields
+returning lead(name, phone), account(name, phone)
+
+
+select leadsource, count() from lead group by LeadSource having 'Web'

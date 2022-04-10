@@ -1,0 +1,16 @@
+AccConAndOppOperations.allAccounts();
+AccConAndOppOperations.listAcc('Customer - Direct');
+AccConAndOppOperations.printAllOpp('Closed Won');
+AccConAndOppOperations.allOpps('Web', 'Closed Won');
+AccConAndOppOperations.sumAllOpp();
+AccConAndOppOperations.newAccount('Seinfeld', 750000, 'Customer - Direct');
+AccConAndOppOperations.newAccount( '', 39399, 'Customer - Direct');
+AccConAndOppOperations.newContact('0015f00000HTNcLAAX');
+AccConAndOppOperations.updateTop10();
+AccConAndOppOperations.varOpp(5, '0015f00000DQCqNAAX');
+AccConAndOppOperations.deleteOpps();
+AccConAndOppOperations.printAcc();
+AccConAndOppOperations.allAcc();
+AccConAndOppOperations.contAvailable();
+AccConAndOppOperations.oppAvailable('Closed Won');
+AccConAndOppOperations.delAcc();

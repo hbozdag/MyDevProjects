@@ -1,0 +1,15 @@
+SELECT ID, lastmodifieddate, project_name__c from salesforce_project__c where name LIKE '%E%'
+
+SELECT name, createddate from Account ORDER by createddate desc
+
+SELECT completed_date__c from salesforce_ticket__c order by completed_date__c LIMIT 5
+
+SELECT ID, priority__c, subject__c from salesforce_ticket__c where subject__c like '%be%'
+
+SELECT ID, createdbyid, salesforce_project__r.project_name__c from salesforce_ticket__c where salesforce_project__r.project_name__c='Shoe Less'
+
+SELECT ID,(SELECT name from contacts) from account 
+
+SELECT ID, project_name__c, (SELECT status__c from salesforce_tickets__c) from salesforce_project__c 
+
+SELECT ID (SELECT priority__c FROM salesforce_tickets__c) FROM salesforce_project__c
