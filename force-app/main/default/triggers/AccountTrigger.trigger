@@ -264,13 +264,13 @@ if(trigger.isBefore){
     }
     }
 }*/
-/*
+
 if(trigger.isBefore){
     System.debug('before insert/update trigger on account object');
     AccountTriggerHandler.updateAccountDescription(Trigger.new, Trigger.old, Trigger.newMap, Trigger.oldMap);
     
     
-}*/
+}
 
 /*
 if(trigger.isAfter && trigger.isUpdate){
